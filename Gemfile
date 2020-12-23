@@ -7,12 +7,10 @@ gem 'puma', '~> 3.0'
 gem 'rails', '~> 5.0.7', '>= 5.0.7.2'
 
 # DATABASE
-gem 'activerecord-session_store', '~> 1.1.3'
 gem 'pg', '>= 0.18', '< 2.0'
 
 # AUTHENTICATION
-gem 'omniauth_openid_connect', github: 'm0n9oose/omniauth_openid_connect', tag: 'v0.3.5'
-gem 'omniauth-openid_connect-providers', github: 'thinkific/omniauth-openid_connect-providers', branch: 'main'
+gem 'omniauth-oauth2', '~> 1.7'
 
 group :development, :test do
   gem 'dotenv-rails', '~> 2.7.6'
